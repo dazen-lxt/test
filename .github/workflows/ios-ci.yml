@@ -13,8 +13,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Configurar Xcode
         run: |
-          sudo xcode-select -s /Applications/Xcode_16.0.app/Contents/Developer
-          xcodebuild -version 16.0
+          xcodebuild -version 16.1
       - name: Construir la aplicación
         run: |
           xcodebuild clean build  \
