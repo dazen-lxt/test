@@ -10,11 +10,15 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Set up Xcode
-        uses: apple-actions/setup-xcode@v2
-        with:
-          xcode-version: '16.0'
-      - name: Build the app
+        uses: actions/checkout@v3
+      - name: Configurar Xcode
         run: |
-          xcodebuild -workspace YourApp.xcworkspace -scheme YourAppScheme -sdk iphoneos -configuration Release build
+          xcodebuild -version 16.0
+      - name: Construir la aplicación
+        run: |
+          xcodebuild clean build  \
+		-project LiteTest.xcodeproj  \
+		-scheme LiteTest  \
+		-sdk iphoneos  \
+		-configuration Debug  \
+		CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
