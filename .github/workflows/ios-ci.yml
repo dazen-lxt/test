@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Set up Xcode
-        uses: macos-setup-action/setup-xcode@v1
+        uses: apple-actions/setup-xcode@v2
         with:
           xcode-version: '16.0'
       - name: Build the app
