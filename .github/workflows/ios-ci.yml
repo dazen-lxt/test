@@ -17,8 +17,8 @@ jobs:
       - name: Construir la aplicación
         run: |
           xcodebuild clean build  \
-		-project LiteTest.xcodeproj  \
-		-scheme LiteTest  \
-		-sdk iphoneos  \
-		-configuration Debug  \
-		CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          -project LiteTest.xcodeproj  \
+          -scheme LiteTest  \
+          -sdk iphoneos  \
+          -configuration Debug  \
+          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
