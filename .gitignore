@@ -1,0 +1,42 @@
+# Xcode
+DerivedData/
+.idea/
+*.xcworkspace
+*.xcuserdata
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/project.xcuserstate
+
+# Swift Package Manager
+/.build/
+Packages/
+SwiftPM/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Build generated
+build/
+*.hmap
+
+# User-specific files
+*.swp
+*~.nib
+*.xcuserstate
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# App-specific files (use if needed)
+*.ipa
+*.dSYM/
